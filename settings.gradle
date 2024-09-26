@@ -1,0 +1,25 @@
+pluginManagement {
+    repositories {
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
+        jcenter()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven {url 'https://jitpack.io'}
+        google()
+        jcenter()
+    }
+}
+
+rootProject.name = "6004_Project_LTTBDD_NguyenTraGiang_PhamMinhTam_ChieuT6"
+include ':app'

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btnHK1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Học kỳ 1"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/btnHK2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Học kỳ 2"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/btnHK3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Học kỳ 3"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvThoiGianDK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:text="Thời gian đăng ký: "
+                    android:textColor="#FF0101"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtTGDky"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="17/06/2024 - 03/07/2024"
+                    android:textColor="#FF0101"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:dividerHeight="0dp">
+
+        </ListView>
+
+        <TextView
+            android:id="@+id/txtChuaDenHan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="CHƯA ĐẾN THỜI GIAN ĐĂNG KÝ. VUI LÒNG QUAY LẠI SAU."
+            android:textAlignment="center"
+            android:textColor="#FF0101"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:clickable="true"
+        android:tint="#FFFFFF"
+        app:backgroundTint="#005394"
+        app:srcCompat="@drawable/img_dkhp" />
+
+</RelativeLayout>

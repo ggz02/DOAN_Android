@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="hoc_ky_array">
+        <item>Học kỳ 1</item>
+        <item>Học kỳ 2</item>
+        <item>Học kỳ 3</item>
+    </string-array>
+
+    <string-array name="loaitracuu_array">
+        <item>Mã học phần</item>
+        <item>Tên học phần</item>
+    </string-array>
+    <string name="menu_dkhp">Đăng ký học phần</string>
+    <string name="menu_tracuu">Tra cứu học phần</string>
+    <string name="menu_lsdkhp">Lịch sử đăng ký học phần</string>
+    <string name="menu_dxuat">Đăng xuất</string>
+    <string name="menu_hpdadk">Học</string>
+
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+</resources>
